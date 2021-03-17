@@ -9,8 +9,6 @@
 <html>
 <head>
     <title>assignment2</title>
-
-
 </head>
 <body>
 <form>
@@ -33,7 +31,13 @@
 
 
 
-
+    <span style="color: #FFA500">Password</span> <input type="password" name="password" required="true" style="background-color: #EAEAAE"><br/><br/>
+    <span style="color: #FFA500">Email</span><input type="email" name="email" required="true"style="background-color: #EAEAAE"><br/><br/>
+    <span style="color: #FFA500">Gender</span>
+    <span style="color: #D2B48C">Male</span><input type="radio">
+    <span style="color: #D2B48C">Female</span><input type="radio"><br/><br/>
+    <span style="color: #FFA500">Date of birth(yyyy-mm-dd)</span><input type="date" pattern="yyyy-mm-dd" required="true"style="background-color: #EAEAAE"><br/><br/>
+    <input type="submit" value="register"style="background-color: #EAEAAE">
 </form>
 </body>
 

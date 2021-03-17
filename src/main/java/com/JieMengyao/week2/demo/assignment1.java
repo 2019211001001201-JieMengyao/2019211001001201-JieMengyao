@@ -17,11 +17,16 @@ public class assignment1 extends HttpServlet {
         writer.println("id: "+id+"<br/>");
         writer.println("Date and Time: "+date.toString()+"<br/>");
     }
+<<<<<<< HEAD
 
 
 
 
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) {
+=======
+    public void doPost(HttpServletRequest request, HttpServletResponse response) {
+
+>>>>>>> origin/master
     }
 }
