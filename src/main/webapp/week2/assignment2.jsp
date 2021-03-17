@@ -28,9 +28,11 @@
     <br/><br/>
     <span style="color: #FFA500">Date of birth(yyyy-mm-dd)</span><input type="date" pattern="yyyy-mm-dd" required="true"style="background-color: #EAEAAE"><br/><br/>
     <input type="submit" value="register"style="background-color: #EAEAAE">
+
+
+
 </form>
 </body>
-
 
 </html>
 
