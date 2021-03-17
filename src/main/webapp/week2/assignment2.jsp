@@ -30,7 +30,6 @@
     <input type="submit" value="register"style="background-color: #EAEAAE">
 
 
-
 </form>
 </body>
 

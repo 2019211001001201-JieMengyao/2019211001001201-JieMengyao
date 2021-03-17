@@ -10,7 +10,6 @@
 <servlet-mapping>
     <servlet-name>anyName</servlet-name>
 
-
     <url-pattern>/assignment1</url-pattern>
 </servlet-mapping>
 
