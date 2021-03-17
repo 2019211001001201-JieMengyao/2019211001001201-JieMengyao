@@ -5,11 +5,13 @@
          version="4.0">
     <servlet>
     <servlet-name>anyName</servlet-name>
-        <servlet-class>com.JieMengyao.week2.demo.HelloWorldServlet</servlet-class>
+        <servlet-class>com.JieMengyao.week2.demo.assignment1</servlet-class>
     </servlet>
 <servlet-mapping>
     <servlet-name>anyName</servlet-name>
     <url-pattern>/hello</url-pattern>
 </servlet-mapping>
+
+
 
 </web-app>

@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Date;
 
+
+
 public class assignment1 extends HttpServlet {
     String name="JieMengyao";
     String id="2019211001001201";
@@ -17,16 +19,14 @@ public class assignment1 extends HttpServlet {
         writer.println("id: "+id+"<br/>");
         writer.println("Date and Time: "+date.toString()+"<br/>");
     }
-<<<<<<< HEAD
+
 
 
 
 
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) {
-=======
-    public void doPost(HttpServletRequest request, HttpServletResponse response) {
 
->>>>>>> origin/master
     }
+
 }
