@@ -28,7 +28,6 @@
     <input type="submit" value="register"style="background-color: #EAEAAE">
 
 
-
     <span style="color: #FFA500">Password</span> <input type="password" name="password" required="true" style="background-color: #EAEAAE"><br/><br/>
     <span style="color: #FFA500">Email</span><input type="email" name="email" required="true"style="background-color: #EAEAAE"><br/><br/>
     <span style="color: #FFA500">Gender</span>
