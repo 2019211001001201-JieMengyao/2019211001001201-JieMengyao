@@ -9,7 +9,8 @@
     </servlet>
 <servlet-mapping>
     <servlet-name>anyName</servlet-name>
-    <url-pattern>/hello</url-pattern>
+
+    <url-pattern>/assignment1</url-pattern>
 </servlet-mapping>
 
 </web-app>
