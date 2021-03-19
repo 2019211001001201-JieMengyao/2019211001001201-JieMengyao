@@ -20,6 +20,7 @@ public class LifeCycleServlet extends HttpServlet {
         // 4.5.6.............
     }
     @Override
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     }
     @Override

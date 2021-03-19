@@ -22,6 +22,7 @@
     </label>
 
 
+
     <label for="2">
         <input type="radio" name="gender" value="female" id="2"/> <span style="color: #D2B48C">Female</span>
     </label>
