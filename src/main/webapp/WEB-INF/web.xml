@@ -9,6 +9,7 @@
     </servlet>
     <servlet>
 
+
         <servlet-name>LifeCycleServlet</servlet-name>
         <servlet-class>com.JieMengyao.week3.demo.LifeCycleServlet</servlet-class>
     </servlet>
