@@ -1,4 +1,4 @@
-package com.JieMengyao.week2.demo;
+package com.JieMengyao;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -8,7 +8,7 @@ import java.util.Date;
 
 
 
-public class assignment1 extends HttpServlet {
+public class HelloWorldServlet extends HttpServlet {
     String name="JieMengyao";
     String id="2019211001001201";
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {

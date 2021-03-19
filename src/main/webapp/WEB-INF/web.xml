@@ -5,13 +5,27 @@
          version="4.0">
     <servlet>
     <servlet-name>anyName</servlet-name>
-        <servlet-class>com.JieMengyao.week2.demo.assignment1</servlet-class>
+        <servlet-class>com.JieMengyao.HelloWorldServlet</servlet-class>
     </servlet>
-<servlet-mapping>
+    <servlet>
+
+        <servlet-name>LifeCycleServlet</servlet-name>
+        <servlet-class>com.JieMengyao.week3.demo.LifeCycleServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.JieMengyao.week3.demo.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
     <servlet-name>anyName</servlet-name>
-
-
-    <url-pattern>/assignment1</url-pattern>
+    <url-pattern>/hello</url-pattern>
 </servlet-mapping>
-
+    <servlet-mapping>
+        <servlet-name>LifeCycleServlet</servlet-name>
+        <url-pattern>/life</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
 </web-app>
