@@ -5,6 +5,7 @@
     <title>register</title>
 </head>
 <body>
+
 <form method="post" action="register">
     <span style="color: #FFA500"> This is my register JSP page</span><br/><br/>
     <span style="color:#FFA500">Username</span> <input type="text" name="name" required="true" style="background-color: #EAEAAE"><br/><br/>
