@@ -8,8 +8,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
-
-
 @WebServlet(
         urlPatterns = {"/jdbc"},
         initParams = {
@@ -41,7 +39,6 @@ public class JDBCDemoServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
-
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("i am in doGet()");
@@ -57,12 +54,9 @@ public class JDBCDemoServlet extends HttpServlet {
 
 
     }
-
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
     }
-
     @Override
     public void destroy() {
         super.destroy();

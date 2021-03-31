@@ -19,16 +19,16 @@ public class RegisterServlet extends HttpServlet {
     }
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String id,name,password,email,gender,date;
-        id = request.getParameter("id");name = request.getParameter("name");
+        String name,password,email,gender,date;
+        name = request.getParameter("name");
         password = request.getParameter("password");email = request.getParameter("email");
         gender = request.getParameter("gender");date = request.getParameter("date");
         PrintWriter writer = response.getWriter();
-        String[][] r = new String[1000][6];
+        String[][] r = new String[1000][5];
         int  a= 0;
         try {
             Statement createDbStatement = dbConn.createStatement();
-            String ADDdbRequire = "insert into usertable values('" + id + "','" + name + "','" + password + "','" + email + "','" + gender + "','" + date + "')";
+            String ADDdbRequire = "insert into usertable values('" + name + "','" + password + "','" + email + "','" + gender + "','" + date + "')";
             createDbStatement.executeUpdate(ADDdbRequire);
             String dbRequire = "select * from usertable";
             ResultSet resultDb = createDbStatement.executeQuery(dbRequire);

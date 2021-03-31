@@ -1,19 +1,12 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: lenovo
-  Date: 2021/3/13
-  Time: 12:57
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<%@include file="header.jsp" %>
 <html>
 <head>
     <title>register</title>
 </head>
 <body>
 <form method="post" action="register">
-    <span style="color: #FFA500"> New User Registration</span><br/><br/>
-    <span style="color:#FFA500">id</span> <input type="text" name="id" required="true" style="background-color: #EAEAAE"><br/><br/>
+    <span style="color: #FFA500"> This is my register JSP page</span><br/><br/>
     <span style="color:#FFA500">Username</span> <input type="text" name="name" required="true" style="background-color: #EAEAAE"><br/><br/>
     <span style="color: #FFA500">Password</span> <input type="password" name="password" maxlength="8" style="background-color: #EAEAAE"><br/><br/>
     <span style="color: #FFA500">Email</span><input type="email" name="email" required="true"style="background-color: #EAEAAE"><br/><br/>
@@ -31,4 +24,4 @@
 </form>
 </body>
 </html>
-
+<%@include file="footer.jsp" %>
