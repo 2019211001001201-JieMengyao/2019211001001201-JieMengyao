@@ -18,6 +18,9 @@ import javax.servlet.annotation.WebServlet;
         },loadOnStartup = 1
 )
 
+
+
+
 public class JDBCDemoServlet extends HttpServlet {
     Connection con=null;
     @Override

@@ -9,6 +9,10 @@
 </head>
 <body>
 
+
+
+
+
 <%@include file="header.jsp" %>
 This is my JSP page. <br>
 <br/>

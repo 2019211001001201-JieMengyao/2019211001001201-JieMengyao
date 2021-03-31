@@ -2,6 +2,10 @@
 <html>
 <head>
 
+
+
+
+
     <title>My Online Shop</title>
 </head>
 <body style="margin:0px;padding:0px;font-family:helvetica;">

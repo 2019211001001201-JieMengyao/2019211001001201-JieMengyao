@@ -7,6 +7,8 @@ public class LifeCycleServlet extends HttpServlet {
     public LifeCycleServlet()
 
 
+
+
     {
         System.out.println("i am in constructor --> LifeCycleServlet");//1
     }
@@ -14,7 +16,6 @@ public class LifeCycleServlet extends HttpServlet {
     public  void init(){
         System.out.println("i am in init() ");//2
     }
-
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
