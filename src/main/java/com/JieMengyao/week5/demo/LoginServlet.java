@@ -21,6 +21,9 @@ public class LoginServlet extends HttpServlet {
         doPost(request, response);
     }
     @Override
+
+
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String name = request.getParameter("name");
         String password= request.getParameter("password");
@@ -28,6 +31,7 @@ public class LoginServlet extends HttpServlet {
         PrintWriter writer = response.getWriter();
         try {
             if( dbConn != null){
+
 
                 String sql = "SELECT * FROM usertable WHERE name=? AND password=?;";
                 PreparedStatement ps = dbConn.prepareStatement(sql);
