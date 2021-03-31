@@ -24,8 +24,11 @@ public class RegisterServlet extends HttpServlet {
         password = request.getParameter("password");email = request.getParameter("email");
         gender = request.getParameter("gender");date = request.getParameter("date");
         PrintWriter writer = response.getWriter();
-        String[][] r = new String[1000][5];
+        String[][] r = new String[1000][6];
         int  a= 0;
+
+
+
         try {
             Statement createDbStatement = dbConn.createStatement();
             String ADDdbRequire = "insert into usertable values('" + name + "','" + password + "','" + email + "','" + gender + "','" + date + "')";
