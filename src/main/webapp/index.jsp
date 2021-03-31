@@ -10,9 +10,6 @@
 <a href="life">Life Cycle Servlet-week3</a>
 </br >
 
-
-
-
 <a href="register.jsp">Register-getParameter-week3</a>
 </br >
 <a href="config">ConfigCycle getParameter-week4</a>

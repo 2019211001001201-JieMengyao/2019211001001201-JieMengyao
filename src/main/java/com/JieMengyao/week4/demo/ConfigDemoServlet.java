@@ -14,8 +14,6 @@ import java.io.Writer;
         @WebInitParam(name="student-id",value="2019211001001201")
 })
 
-
-
 public class ConfigDemoServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

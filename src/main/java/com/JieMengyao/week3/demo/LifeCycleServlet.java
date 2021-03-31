@@ -8,7 +8,6 @@ public class LifeCycleServlet extends HttpServlet {
 
 
 
-
     {
         System.out.println("i am in constructor --> LifeCycleServlet");//1
     }

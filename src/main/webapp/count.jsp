@@ -5,10 +5,6 @@
     <title>Counter JSP</title>
 </head>
 
-
-
-
-
 <body>
 This is Count JSP page.<br>
 <%!int getCount(){

@@ -10,8 +10,6 @@ public class RegisterServlet extends HttpServlet {
     public Connection dbConn;
     public void init() {
 
-
-
         try { Class.forName(getServletConfig().getServletContext().getInitParameter("driver"));
             dbConn = DriverManager.getConnection(getServletConfig().getServletContext().getInitParameter("url"), getServletConfig().getServletContext().getInitParameter("Username"), getServletConfig().getServletContext().getInitParameter("Password"));
         } catch (Exception e) {

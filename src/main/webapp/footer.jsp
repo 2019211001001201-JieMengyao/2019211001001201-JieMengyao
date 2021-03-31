@@ -5,10 +5,6 @@
 <p align="center">Are you admin?<a href='admin'>Click Here</a></p>
 </body>
 
-
-
-
-
 </html>
 
 

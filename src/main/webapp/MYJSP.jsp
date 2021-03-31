@@ -8,11 +8,6 @@
   <h1>My JSP page</h1>
 </head>
 <body>
-
-
-
-
-
 <%@include file="header.jsp" %>
 This is my JSP page. <br>
 <br/>
