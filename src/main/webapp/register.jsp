@@ -4,6 +4,7 @@
 <head>
     <title>register</title>
 </head>
+
 <body>
 <form method="post" action="register">
     <span style="color: #FFA500"> This is my register JSP page</span><br/><br/>
