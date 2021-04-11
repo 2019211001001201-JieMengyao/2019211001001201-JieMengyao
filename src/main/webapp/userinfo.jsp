@@ -12,4 +12,5 @@
         <td>Birthdate</td> <td><%=request.getAttribute("Birthdate")%></td>
     </tr>
 </table>
+
 <%@include file="footer.jsp" %>

@@ -6,6 +6,7 @@ import java.io.IOException;
 public class LifeCycleServlet extends HttpServlet {
     public LifeCycleServlet()
 
+
     {
         System.out.println("i am in constructor --> LifeCycleServlet");//1
     }

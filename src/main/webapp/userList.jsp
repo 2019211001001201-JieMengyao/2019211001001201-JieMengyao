@@ -11,6 +11,7 @@
                     +rs.getString("gender")+"</td><td>"+rs.getString("birthdate")+"</td></tr>");
         }
     %>
+
 </table>
 
 <%@include file="footer.jsp" %>

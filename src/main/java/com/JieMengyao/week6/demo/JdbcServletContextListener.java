@@ -16,6 +16,7 @@ public class JdbcServletContextListener implements ServletContextListener {
         System.out.println("-----");
     }
 
+
     @Override
     public void contextInitialized(ServletContextEvent sce) {
         Connection dbConn;

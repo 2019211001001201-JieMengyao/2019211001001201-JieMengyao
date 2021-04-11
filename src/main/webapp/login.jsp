@@ -5,6 +5,7 @@ Login <br>
     {
         out.println("<h3 style = 'color:red'>"+request.getAttribute("msg")+"</h3>");
     }
+
 %>
 
 <form method="post" action="${pageContext.request.contextPath}/login">

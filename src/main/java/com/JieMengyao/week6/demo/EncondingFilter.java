@@ -16,6 +16,7 @@ public class EncondingFilter implements javax.servlet.Filter {
         chain.doFilter(req, resp);
     }
 
+
     public void init(FilterConfig config) throws ServletException {
 
     }
