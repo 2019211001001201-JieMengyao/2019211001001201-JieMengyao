@@ -3,6 +3,7 @@
 
 <h2>User Info</h2>
 
+
 <table border="1" >
     <tr>
         <td>Username</td><td><%=request.getAttribute("Username")%></td> </tr>

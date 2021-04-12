@@ -8,10 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.sql.Connection;
 import java.sql.DriverManager;
-
-
-
-@WebListener()
+@WebListener
 public class JdbcServletContextListener implements ServletContextListener {
 
     public JdbcServletContextListener() {
