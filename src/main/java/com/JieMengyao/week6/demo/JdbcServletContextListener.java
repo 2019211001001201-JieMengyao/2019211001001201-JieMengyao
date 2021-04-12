@@ -9,14 +9,14 @@ import javax.servlet.http.HttpServletResponse;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-//@WebListener()
+
+
+@WebListener()
 public class JdbcServletContextListener implements ServletContextListener {
 
     public JdbcServletContextListener() {
         System.out.println("-----");
     }
-
-
     @Override
     public void contextInitialized(ServletContextEvent sce) {
         Connection dbConn;
