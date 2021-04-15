@@ -1,19 +1,17 @@
 package com.JieMengyao.week5.demo;
-import java.sql.PreparedStatement;
+import com.JieMengyao.dao.UserDao;
+import com.JieMengyao.model.User;
+import java.sql.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
 @WebServlet(name = "LoginServlet", value = "/login")
 public class LoginServlet extends HttpServlet {
     Connection con = null;
     @Override
     public void init() throws ServletException {
-
 //    public Connection dbConn;
 //    public void init() {
 //        try { Class.forName(getServletConfig().getServletContext().getInitParameter("driver"));
@@ -27,18 +25,31 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doPost(request, response);
+//        doPost(request, response);
+        request.getRequestDispatcher("WEB-INF/views/login.jsp").forward(request, response);
     }
     @Override
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String name = request.getParameter("name");
         String password= request.getParameter("password");
+        UserDao userDao=new UserDao();
+        try {
+           User user= userDao.findByUsernamePassword(con ,name,password);
+           if(user!=null){
+               request.setAttribute("user",user);
+               request.getRequestDispatcher("WEB-INF/views/userinfo.jsp").forward(request,response);
+           }else{
+               request.setAttribute("msg" ,"username or password Error");
+               request.getRequestDispatcher("WEB-INF/views/login.jsp").forward(request,response); }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
         System.out.println(name + password);
-//        System.out.println(con);
+        System.out.println(con);
         try {
             if( con != null){
-                String sql = "SELECT * FROM usertable WHERE name=? AND password=?;";
+              /*  String sql = "SELECT * FROM usertable WHERE name=? AND password=?;";
                 PreparedStatement ps = con.prepareStatement(sql);
                 ps.setString(1,name);
                 ps.setString(2,password);
@@ -62,6 +73,12 @@ public class LoginServlet extends HttpServlet {
             }
         }catch (Exception e) {
             System.out.println(e);
+        }
+
+    }*/
+}
+            }catch (Exception e){
+            e.printStackTrace();
         }
     }
 }

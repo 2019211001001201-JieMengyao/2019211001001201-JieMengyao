@@ -17,7 +17,8 @@ public class RegisterServlet extends HttpServlet {
             System.out.println(e); } }
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doPost(request, response);
+//        doPost(request, response);
+        request.getRequestDispatcher("register.jsp").forward(request,response);
     }
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

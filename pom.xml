@@ -46,7 +46,15 @@
             <scope>provided</scope>
         </dependency>
 
-<!--        <dependency>-->
+        <!-- jdbc工具包 -->
+        <dependency>
+            <groupId>commons-dbutils</groupId>
+            <artifactId>commons-dbutils</artifactId>
+            <version>1.7</version>
+        </dependency>
+
+
+        <!--        <dependency>-->
 <!--            <groupId>javax.servlet</groupId>-->
 <!--            <artifactId>jsp-api</artifactId>-->
 <!--            <version>2.0<version>-->
