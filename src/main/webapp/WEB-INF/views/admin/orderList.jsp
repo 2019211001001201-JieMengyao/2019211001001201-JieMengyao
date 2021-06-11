@@ -5,6 +5,7 @@
         <script>
            $(document).ready(function() {
 	$('button').click(function() {
+
 		var t = $(this).attr('id'); 
 		$.ajax({
 			url : '<%=basePath%>orderDetails',
